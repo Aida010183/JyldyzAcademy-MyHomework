@@ -1,1 +1,1 @@
-# JyldyzAcademy-MyHomework
+# JyldyzAcademy-MyHW
