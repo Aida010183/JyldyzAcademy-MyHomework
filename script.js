@@ -1,51 +1,26 @@
-// 1. Простое сообщение: сохраните текстовое сообщение в переменной и выведите его в браузере.
-// let userName = "I will always do it, I need to see the results.";
-// alert(userName);
+// 1. Дана строка **'ddd@bbb@ccc'**. Замените все **@** на **'!'**
+let userString = "ddd@bbb@ccc";
+alert(userString.replace(/@/g, "!"));
+document.write(userString.replace(/@/g, "!") + "<br>");
 
-// 2. Простые сообщения: сохраните сообщение в переменной и выведите это сообщение. Затем замените значение переменной другим сообщением и выведите новое сообщение.
-// let userMessage;
-// userMessage = "Let's learn!";
-// userMessage = "Save the world!";
-// document.write(userMessage);
+// 2. Дана строка **'js'**. Сделайте из нее строку **'JS'**.
+let userString2 = "js";
+document.write(userString2.toUpperCase() + "<br>");
 
-// 3. Напишите несколько строк кода, выводящих на экран ваше имя и почтовый адрес.
-//
-/*let userSurName = prompt("Your last name:");
-let userName = prompt("Your first name:");
-let userEmail = prompt("Your email:");
-document.write("<h1>Your last name: " + userSurName + "</h1>");
-document.write("<h1>Your first name: " + userName + "</h1>");
-document.write("<h1>Your email: " + userEmail + "</h1>");*/
+// 3. Дана строка **'JS'**. Сделайте из нее строку **'js'**.
+let userString3 = "JS";
+document.write(userString3.toLowerCase() + "<br");
 
-// 4. Интернет-магазин занимается продажей различных сувениров и безделушек. Каждый сувенир весит 75 г, а безделушка – 112 г. Напишите программу, запрашивающую у пользователя количество тех и других покупок, после чего выведите на экран общий вес посылки.
-//
-/*const SOUVENIR = 75;
-const KNICKKNACK = 112;
-let Souvenir = prompt("How many souvenirs did you buy?");
-let KnickKnack = prompt("How many knickknacks did you buy?");
-let decition = Souvenir * SOUVENIR + KnickKnack * KNICKKNACK;
-document.write(
-  `<h1>Total purchase weight: ${decition.toFixed(2)}gram` + "</h1>"
-);*/
+// 4. Дана строка**'I am a hero!'**. Выведите в консоль **количество символов** в этой строке.
+let userString4 = "I am a hero";
+console.log(userString4.length);
 
-/*5. Создайте программу, которая запрашивает у пользователя два целых числа a и b, после чего выводит на экран результаты следующих математических операций: 
-- сумма a и b; 
+// 5. Составить скрипт, который запрашивает у пользователя ввести номер кредитной карты. Скрипт должен обработать полученный номер и показать на странице последние 4 цифры а остальные цифры карты должны заменены на *.
 
-- разница между a и b;
+// **Пример: "Номер вашей карты: **********1245"**
 
-- произведение a и b; 
-
-- частное от деления a на b; 
-
-- остаток от деления a на b;  
-
-- результат возведения числа a в степень b.*/
-/*
-let a = +prompt("Specify an integer for a:");
-let b = +prompt("Specify an integer for b:");
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
-console.log(a ** b);*/
+// let userCard = prompt("Введите номер кредитной карты:");
+// document.write(
+//   "Номер вашей карты: " +
+//     userCard.replace(userCard.slice(0, -4), "************")
+// );
